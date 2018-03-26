@@ -1,0 +1,91 @@
+			body
+			{
+				background-color: black;
+				color: white;
+				text-align: center;
+			}
+			table
+			{
+				border-collapse: collapse;
+				width: 90%;
+				margin: auto;
+			}
+			#threed
+			{
+				position: relative;
+				top: 50px;
+				width: 70%;
+			}
+			td
+			{
+				width: 5%;
+				border: none;
+				position: relative;
+
+			}
+			.atomic_mass
+			{
+				font-size: 0.6vw;
+				text-align: right;
+			}
+			.number
+			{
+				font-size: 0.6vw;
+				text-align: left;
+				position: absolute;
+				bottom: 0px;
+			}
+			.symbol
+			{
+				font-size: 2vw;
+				text-align: center;
+			}
+			.place_holder
+			{
+				border: none;
+			}
+			.purple
+			{
+				background-color: #8B008B;
+				color: white;
+			}
+			.blue
+			{
+				background-color: #008B8B;
+			}
+			.deep_blue
+			{
+				background-color: #483D8B;
+			}
+			.green
+			{
+				background-color: #8FBC8F;
+			}
+			.orange
+			{
+				background-color: #FFA500;
+			}
+			.palegreen
+			{
+				background-color: #98FB98;
+			}
+			.olive
+			{
+				background-color: #808000;
+			}
+			.tomato
+			{
+				background-color: #FF6347;
+			}
+			.steelblue
+			{
+				background-color: #4682B4;
+			}
+			.thistle
+			{
+				background-color: #D8BFD8;
+			}
+			.grey
+			{
+				background-color: #708090;
+			}
