@@ -1,0 +1,170 @@
+body
+{
+	background-color: #505050;
+}
+
+#main_wrapper
+{
+	width: 1100px;
+	margin: auto;
+
+	position: relative;
+}
+
+nav, section, header, form
+{
+	border-radius: 10px;
+	box-shadow: 8px 8px 10px;
+	margin: 15px;
+}
+
+nav, section, header
+{
+	background-color: #909090;
+}
+
+nav, section
+{
+	height: 321px;
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 0px 15px 0px;
+}
+
+
+#main_img
+{	height: 436px;
+	width: 765px;
+	margin: 15px 25px;
+	background-image: url("resources/cluster.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 98%;
+}
+
+header
+{
+	height: 100px;
+	position: relative;
+	margin: 15px;
+}
+
+#middle_section
+{
+	width: 1070px;
+	margin: -12px 35px;
+}
+
+#day
+{
+	width: 320px;
+	margin-left: 10px;
+	position: absolute;
+	bottom: 10px;
+}
+
+#loupe
+{
+	margin-left: 10px;
+	height: 110px;
+	position: absolute;
+	bottom: -15px;
+	right: 20px;
+}
+
+#reload
+{
+	height: 15px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#close
+{
+	height: 15px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+nav img, section img, section div
+{
+	position: relative;
+	width: 50%;
+	left: 25%;
+	padding: 5px 0px 0px;
+}
+
+#avancer
+{
+	margin-top: 10px;
+}
+
+#regarder
+{
+	border: 4px solid red;
+	padding: 0px;
+}
+
+#book
+{
+	margin-top: 10px;
+}
+
+#wall
+{
+	height: 45px;
+	width: 85%;
+	left: 5%;
+	background-image: url("resources/brick.jpg");
+}
+
+form
+{
+	background-color: #88FF89;
+	width: 385px;
+	height: 127px;
+	position: relative;
+	bottom: 75px;
+	right: 25px;
+}
+
+#form_content
+{
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+
+#form_content p
+{
+	font-family: sans-serif;
+	font-size: small;
+	padding: 0px;
+	margin: 1px;
+}
+
+.dialogue
+{
+	font-style: italic;
+}
+
+#entrez
+{
+	font-family: serif;
+	font-size: x-large;
+}
+
+#ordi
+{
+	text-shadow: 3px 3px 3px #ef6c00;
+}
+
+#first_question
+{
+	width: 275px;
+}
+
+
