@@ -10,34 +10,35 @@
 		<header>
 			<img id="day" src="resources/day_of_the_42.png" alt="day_of_the_42">
 			<img id="loupe" src="resources/loupe.png" alt="loupe">
-			<a href="www.disney.com">
+			<a href="http://www.disney.com">
 				<img id="reload" src="resources/reload.png" alt="Recommencer au début" title="Recommencer au début">
 			</a>
-			<a href="www.relaischateaux.com">
+			<a href="http://www.relaischateaux.com">
 				<img id="close" src="resources/close.gif" alt="close" title="Déconnecter">
 			</a>
 		</header>
 
 		<div id="middle_section">
 		<nav>
-			<img id="avancer" src="resources/arrow.png" alt="Avancer"><br>
-			<img id="prendre" src="resources/main.png" alt="Prendre"><br>
-			<img id="regarder" src="resources/oeil.png" alt="Regarder"><br>
-			<img id="utiliser" src="resources/outil.png" alt="Utiliser"><br>
-			<img id="parler" src="resources/chat-icon.png" alt="Parler"><br>
+			<img id="avancer" src="resources/arrow.png" alt="Avancer" title="Avancer"><br>
+			<img id="prendre" src="resources/main.png" alt="Prendre" title="Prendre"><br>
+			<img id="regarder" src="resources/oeil.png" alt="Regarder" title="Regarder"><br>
+			<img id="utiliser" src="resources/outil.png" alt="Utiliser" title="Utiliser"><br>
+			<img id="parler" src="resources/chat-icon.png" alt="Parler" title="Parler"><br>
 		</nav>
 
 		<section id="main_img">
-			<map name="map" id="map">
-			   <area alt="" title="Ikea" href="http://www.apple.com" shape="rect" coords="803,446,1006,325">
-				<area alt="" title="Apple" href="http://www.ikea.com"  shape="rect" coords="323,327,475,561">
+			<img src="resources/cluster.jpg" alt="Cluster" usemap="#cluster">
+			<map name="cluster">
+			   <area alt="Apple" title="Apple" href="http://www.apple.com" shape="rect" coords="580,245,730,370">
+				<area alt="Ikea" title="Ikea" href="http://www.ikea.com"  shape="rect" coords="240,250,340,410">
 			</map>
 		</section>
 
 		<section id="right_section">
-			<img id="book" src="resources/book.png" alt="Book">
-			<img  src="resources/towel.png" alt="Towel">
-			<div id="wall"></div>
+			<img id="book" src="resources/book.png" alt="Livre" title="Livre">
+			<img  src="resources/towel.png" alt="Serviette" title="Serviette">
+			<div id="wall" title="Another brick in the wall"></div>
 		</section>
 		</div>
 
@@ -46,9 +47,9 @@
 				<p>Vous <span id="entrez">entrez</span> alors dans une grande piece remplie d'<span id="ordi">ordinateurs</span>...</p>
 			<p class="dialogue">- Bonjour, vous &ecirc;tes nouveau ici ?</p>
 			<input type="text" id="first_question"  name="first_question" value="">
-			<input type="submit" value="Repondre">
+			<input type="submit" id="button" value="Repondre">
 			</div>
-		</form> 
+		</form>
 		</div>
 		</body>
 

@@ -34,13 +34,20 @@ nav, section
 
 
 #main_img
-{	height: 436px;
+{
+	height: 436px;
 	width: 765px;
 	margin: 15px 25px;
-	background-image: url("resources/cluster.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 98%;
+	position: relative;
+}
+
+#main_img img
+{
+	width: 98%;
+	height: 96%;
+	position: relative;
+	left: 1%;
+	top: 1%;
 }
 
 header
@@ -119,6 +126,8 @@ nav img, section img, section div
 	width: 85%;
 	left: 5%;
 	background-image: url("resources/brick.jpg");
+	background-size: 20px 20px;
+	background-repeat: repeat;
 }
 
 form
@@ -155,6 +164,7 @@ form
 {
 	font-family: serif;
 	font-size: x-large;
+	letter-spacing: 1px;
 }
 
 #ordi
@@ -164,7 +174,17 @@ form
 
 #first_question
 {
+	margin: 0px 5px;
 	width: 275px;
+	height: 12px;
 }
 
+input
+{
+	border-radius: 0px;
+}
 
+#button
+{
+	margin: 0px 5px;
+}
