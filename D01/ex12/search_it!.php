@@ -2,7 +2,7 @@
 <?php
 if ($argc > 2)
 {
-	$tmp = 0;
+	$flag = 0;
 	$i = 2;
 	while ($i < $argc)
 	{
@@ -10,13 +10,15 @@ if ($argc > 2)
 		if (count($test) == 2)
 		{
 			if (strcmp($test[0], $argv[1]) == 0)
+			{
+				$flag = 1;
 				$tmp=$test[1];
+			}
 		//	echo $tmp;
 		}
 		$i++;
 	}
-	if ($tmp != 0)
+	if ($flag == 1)
 		echo $tmp."\n";
 }
-//gerer div par 0
 ?>
