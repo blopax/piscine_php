@@ -12,7 +12,6 @@ if ($argc > 1)
 {
 	$str="";
 	$array = array_filter(explode(' ', $argv[1]), "check");
-	print_r($array);
 	foreach ($array as $value)
 		$str = $str.$value.' ';
 	$str = substr($str, 0 , -1);
