@@ -55,6 +55,6 @@ if ($argc > 1)
 	date_default_timezone_set('Europe/Paris');
 	$result = mktime($hour[0], $hour[1] ,$hour[2], $array[2], $array[1], $array[3]);
 
-	echo $result;
+	echo "$result\n";
 }
 ?>
