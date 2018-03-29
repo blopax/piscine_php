@@ -18,25 +18,24 @@ if ($argc > 1)
 	$page = curl_exec($ch);
 	curl_close($ch);
 
-	//	echo $page;
-
 	preg_match_all('/<img.*src="([^"]*)"[^>]*>/' ,$page, $matches);
-
-	$dir = preg_replace('/^(https?:\/\/)/', '', $argv[1]);
-	if (!is_dir($dir))
-		mkdir($dir);
-
-	foreach ($matches[1] as $IMG)
+	if (count($matches[1]) != 0)
 	{
-		if (preg_match('/^(https?:\/\/)/', $IMG) == 1)
-			$URL = $IMG;
-		else
-			$URL = $argv[1].$IMG;
-		$img_name = preg_replace('/.*\//', '', $URL);
-		echo $img_name;
-		if (!is_file($dir.'/'.$img_name))
-			touch($dir."/".$img_name);
-		ft_download_image($URL, $dir."/".$img_name);
+		$dir = preg_replace('/^(https?:\/\/)/', '', $argv[1]);
+		if (!is_dir($dir))
+			mkdir($dir);
+
+		foreach ($matches[1] as $IMG)
+		{
+			if (preg_match('/^(https?:\/\/)/', $IMG) == 1)
+				$URL = $IMG;
+			else
+				$URL = $argv[1].$IMG;
+			$img_name = preg_replace('/.*\//', '', $URL);
+			if (!is_file($dir.'/'.$img_name))
+				touch($dir."/".$img_name);
+			ft_download_image($URL, $dir."/".$img_name);
+		}
 	}
 }
 
