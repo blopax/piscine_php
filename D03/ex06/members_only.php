@@ -9,7 +9,6 @@ else
 	header("HTTP/1.0 401 Unauthorized");
 	header("WWW-Authenticate: Basic realm=''Espace membres''");
 	header("Connection: close");
-	header("Content-Type: text/html");
 	echo "<html><body>Cette zone est accessible uniquement aux membres du site</body></html>\n";
 }
 ?>
