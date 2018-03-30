@@ -9,4 +9,5 @@ else
 	header("http/1.0 401 Unauthorized");
 	header("WWW-Authenticate: basic realm=''Espave membres''");
 	echo "<html><body>Cette zone est accessible uniquement aux membres du site</body></html>\n";
+}
 ?>
