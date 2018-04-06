@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript</title>
+
+	</head>
+
+	<body>
+	
+	<div id="ft_list">
+	</div>
+
+	<button onclick="return ft_new();">New</button>
+	<script>
+
+	window.onload = function()
+	{
+	//get cookies
+	}
+
+	function ft_new()
+	{
+		var answer = prompt("Enter your new to do item.");
+		var existing = document.getElementById("ft_list").innerHTML;
+		document.getElementById("ft_list").innerHTML = "<div class=\"toDoItem\" onclick=\"return ft_delete(this)\"><p>" + answer + "<\/p><\/div>" + existing;
+		
+//		alert("<div id=\"to_do\">" + answer + "<\/div>");
+//		alert(document.getElementById("ft_list"));
+	}
+
+	function ft_delete(element)
+	{
+		element.outerHTML = "";
+	}
+
+
+	</script>
+
+	</body>
+</html>

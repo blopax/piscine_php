@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript</title>
+
+		<style>
+			#balloon
+			{
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				background: red;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="balloon" onclick="ft_bigger()" onmouseout="ft_smaller()"></div>
+
+		<script>
+			var balloon = document.getElementById("balloon");
+			var size = balloon.offsetHeight;
+			var color = 0;
+			
+			function ft_display()
+			{
+			if (color == 0)
+				balloon.style.background = "red";
+			else if (color == 1)
+				balloon.style.background = "green";
+			else
+				balloon.style.background = "blue";
+			balloon.style.height = size + 'px';
+			balloon.style.width = size + 'px';
+			}
+
+			function ft_bigger()
+			{
+				color = ((color + 1) % 3);
+				size += 10;
+				if (size > 420)
+				{
+					size = 200;
+					color = 0;
+				}
+				ft_display();
+			}
+
+			function ft_smaller()
+			{
+				color = ((color + 2) % 3);
+				size -= 5;
+				if (size < 200)
+				{
+					size = 200;
+					color = 0;
+				}
+				ft_display();
+			}
+		</script>
+
+	</body>
+</html>
